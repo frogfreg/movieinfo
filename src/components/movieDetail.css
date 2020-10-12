@@ -1,0 +1,35 @@
+.main {
+  background-color: blue;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  justify-items: center;
+}
+@media only screen and(min-width:720px) {
+  .main {
+    grid-template-columns: 30% 1fr;
+  }
+}
+
+.poster {
+  max-width: 100%;
+  background-color: green;
+}
+.details {
+  place-self: start stretch;
+  background-color: pink;
+}
+.title{
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+.ratings {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.year{
+  color: grey;
+  font-size: .8em;
+
+}

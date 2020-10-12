@@ -1,0 +1,42 @@
+.container-main {
+  background-color: blue;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+}
+@media only screen and (min-width: 960px) {
+  .movie-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.movie-thumbnail {
+  max-width: 100%;
+}
+
+.movie-card {
+  padding: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.movie-card:active {
+  transform: translateY(1rem);
+}
+ul {
+  list-style: none;
+}
+.movie-list button {
+  border: none;
+  color: inherit;
+  padding: 0;
+  outline: inherit;
+  background-color: inherit;
+}
+.movie-list button:hover {
+  cursor: pointer;
+}
+.movie-list button:focus {
+  transform: scale(1.1);
+}
