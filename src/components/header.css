@@ -1,11 +1,11 @@
 .container-header {
   display: flex;
-  background-color: yellow;
   grid-row: 1 / 2;
   grid-column: 1 / -1;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  margin-top: 1rem;
 }
 @media only screen and (min-width: 720px) {
   .container-header {
@@ -15,12 +15,11 @@
 
 .header-form {
   display: flex;
-  background-color: blue;
+
   flex-basis: 50%;
   justify-content: center;
   align-self: stretch;
   align-items: center;
-
 }
 .movie-search-input {
   flex-basis: 60%;
@@ -34,7 +33,7 @@
 .search-button {
   font-family: inherit;
   font-size: medium;
-  margin: 0;
+  margin-bottom: 0.5rem;
   height: 100%;
 }
 @media only screen and (min-width: 720px) {
@@ -48,10 +47,6 @@
 .brand {
   font-family: "Fredoka One", cursive;
   font-size: 2.25rem;
-  color: inherit;
+  color: #81a5ff;
   text-decoration: none;
-}
-.brand:link,
-.brand:visited {
-  color: inherit;
 }

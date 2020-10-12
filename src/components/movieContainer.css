@@ -1,11 +1,11 @@
 .container-main {
-  background-color: blue;
   grid-row: 2 / 3;
   grid-column: 2 / 3;
 }
 .movie-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 0.5rem;
 }
 @media only screen and (min-width: 960px) {
   .movie-list {
@@ -17,7 +17,7 @@
 }
 
 .movie-card {
-  padding: 0.5rem;
+  margin-top: 1rem;
   transition: transform 0.2s;
 }
 
@@ -39,4 +39,9 @@ ul {
 }
 .movie-list button:focus {
   transform: scale(1.1);
+}
+.caption {
+  font-family: "Noto Sans", sans-serif;
+  color: #97a5f7;
+  font-size: 1.3125rem;
 }

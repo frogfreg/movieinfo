@@ -1,23 +1,23 @@
-import React from "react"
-import "./movieContainer.css"
+import React from "react";
+import "./movieContainer.css";
 
 function MovieContainer({ movieList, setSelectedMovie }) {
   return (
     <main className="container-main">
       {movieList ? (
         <ul className="movie-list">
-          {movieList.map(movie => {
+          {movieList.map((movie) => {
             return (
               <li key={movie.imdbID}>
                 <div className="movie-card">
                   <button
-                    onKeyDown={event => {
+                    onKeyDown={(event) => {
                       if (event.key === "Enter") {
-                        setSelectedMovie(movie)
+                        setSelectedMovie(movie);
                       }
                     }}
                     onClick={() => {
-                      setSelectedMovie(movie)
+                      setSelectedMovie(movie);
                     }}
                   >
                     <figure>
@@ -26,21 +26,24 @@ function MovieContainer({ movieList, setSelectedMovie }) {
                         src={movie.Poster}
                         alt="movie poster"
                       />
-                      <figcaption style={{ textAlign: "center" }}>
+                      <figcaption
+                        className="caption"
+                        style={{ textAlign: "center" }}
+                      >
                         {movie.Title}
                       </figcaption>
                     </figure>
                   </button>
                 </div>
               </li>
-            )
+            );
           })}
         </ul>
       ) : (
         <h3 style={{ textAlign: "center" }}>No results</h3>
       )}
     </main>
-  )
+  );
 }
 
-export default MovieContainer
+export default MovieContainer;

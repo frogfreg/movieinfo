@@ -7,9 +7,8 @@
 }
 
 .container {
-  background-color: red;
   display: grid;
-  grid-template-rows: 15vh 1fr;
+  grid-template-rows: 14vh 1fr;
   grid-template-columns: 0 1fr 0;
 }
 @media only screen and (min-width: 600px) {

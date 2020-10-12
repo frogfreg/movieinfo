@@ -1,10 +1,13 @@
 .main {
-  background-color: blue;
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   justify-items: center;
+  margin-top: 1rem;
+  background-color: #0536a826;
+  border-radius: 25px;
+  padding: 1rem;
 }
 @media only screen and(min-width:720px) {
   .main {
@@ -14,22 +17,20 @@
 
 .poster {
   max-width: 100%;
-  background-color: green;
 }
 .details {
   place-self: start stretch;
-  background-color: pink;
+  color: #ffffff;
 }
-.title{
-    margin-bottom: 1rem;
-    margin-top: .5rem;
+.title {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 .ratings {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.year{
-  color: grey;
-  font-size: .8em;
-
+.year {
+  color: #b2f7fb;
+  font-size: 0.8em;
 }
